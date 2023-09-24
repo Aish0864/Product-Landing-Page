@@ -1,0 +1,390 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: linear-gradient(to top, #f2c6a4 0%, white 100%);
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.header{
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    background-color: white;
+    width: 99%;
+    height: 9%;
+    box-shadow: 0px 0px 15px 0px rgba(183, 176, 172, 0.618);
+    z-index: 2;
+}
+.logo h3{
+    transition:ease-out 0.5s ;
+    padding-left: 30px;
+    font-size: 2rem;
+    font-weight: 900;
+    padding-top: 1vw;
+    text-shadow: 1px 1px 2px gray;
+}
+.logo img{
+    width: 6rem;
+    height: 4rem;
+}
+.header_contains{
+    width: 70vh;
+    align-self: center;
+    padding-right: 2vw;
+}
+.header_contains ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+}
+.header_contains ul li a{
+    color: rgb(197, 50, 14);
+    font-size: 3.5vh;
+    font-weight: 800;
+}
+.header_contains ul li a:hover{
+    font-size: 4vh;
+    transition: 0.2s;
+    text-shadow: 0px 0px 1px rgb(123, 119, 119);
+}
+.container{
+    padding-top: 20px;
+    position: relative;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 3vw;
+}
+.main{
+    padding-top: 50px;
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+}
+.info{
+    border-radius: 20px;
+    height: 50%;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: column;
+    /* border: solid 1px rgb(230, 230, 230); */
+    background-color:rgba(224, 221, 221, 0.148);
+    padding: 5vw;
+}
+.title h1 {
+    font-size: 3vw;
+    color: rgb(101, 23, 3);
+    text-shadow: 0px 2px 2px rgb(143, 123, 123);
+    font-family: 'Balsamiq Sans', cursive;
+    padding-bottom: 20px;
+}
+
+.description{
+    font-size: 1vw;
+}
+.action h1{
+margin: 2vw 0;
+color: #481601;
+}
+.action i{
+    font-size: 1.6rem;
+}
+.buybtn{
+    padding: 1vw 1.5vw;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    border: 0;
+    border-radius: 10px;
+    box-shadow: 0px 2px 3px 1px gray;
+    background-color: rgb(136, 52, 0);
+    font-size: 1.2vw;
+    width: 10vw;
+    height: 3vw;
+}
+.product_image{
+    margin:auto auto;
+}
+.pimage {
+    transition: ease-in-out 0.5s;
+    padding-top: 15vh;
+    width: 35vw;
+}
+.pimage:hover{
+    width: 33vw;
+    transition-duration: 0.5s;
+}
+.shadows{
+    display: flex;
+}
+.shadow1{
+    position: absolute;
+    border-radius: 50px;
+    width: 18vw;
+    opacity: 0.2;
+}
+.shadow2{
+    position: absolute;
+    width:7vw;
+    opacity: 0.2;
+    padding-left: 18vw;
+}
+.feature_title{
+    font-family: 'Balsamiq Sans';
+    letter-spacing: 0.3vw;
+    color: rgb(133, 29, 3);
+    text-align: center;
+    font-size: 4vw;
+    padding-top: 9vw;
+    text-shadow: 1px 0px 2px rgb(82, 80, 80);
+}
+
+.features{
+    padding: 1vw 0;
+    width: 96%;
+    height: 100vh;
+    margin: 20px auto;
+    display: grid;
+    justify-content: center;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+    grid-template-columns:30% 40% 30%;
+    grid-gap: 10px;
+}
+.features i {
+    font-size: 3vw;
+    padding-right: 2vw;
+}
+#d1,#d3,#d6,#d7,#d9,#d12{
+    display: flex;
+    margin: auto;
+    padding: 1.5vw 3vw;
+    border-radius: 10px;
+}
+#d6{
+    font-size: 1.2vw;
+    background-color: unset;
+    flex-flow: column;
+    justify-content: center;
+    text-align: center;
+}
+
+#d6 i,#d12 i{
+    padding-top: -10px;
+    font-size: 4vw;
+    padding-left:2vw;
+    padding-bottom: 1vh;
+}
+#d2,#d8{
+    text-shadow: 1px 1px 1px black;
+    background-size: cover;
+    background-position: center;
+    margin: 1vw 0;
+    padding: 2vw;
+    border-radius: 20px;
+    transition: all 1s;
+}
+#d2:hover , #d8:hover{
+    background-position: bottom;
+}
+#d2{
+    font-family: 'Balsamiq Sans', cursive;
+    font-size: 2vw;
+    color: rgb(230, 225, 225);
+    background-image: url(/image/features2.jpg);
+    grid-row: 1/3;
+    grid-column:2/3;
+}
+#d8{
+    font-family: "Akaya Kanadaka","cursive";
+    color: white;
+    font-size: 2.5vh;
+    text-shadow: 1px 1px 1px black;
+    font-weight: 200;
+    background-position: top;
+    background-image: url(/image/colours.png);
+    grid-row: 4/6;
+    grid-column:2/3;
+    
+}
+#d8 h1{
+    letter-spacing: 0.5vw;
+    font-family: 'Balsamiq Sans', cursive;
+    margin-top: -10px;
+    color: rgb(209, 201, 201);
+    font-size: 3.5vw;
+}
+
+#d4,#d10{
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: ease-out 1s;
+}
+#d4{
+    background-image: url(/image/brown-removebg-preview.png);
+    grid-row: 2/4;
+}
+#d10{
+    border-radius: 20px;
+    background-image: url(/image/earbuds-removebg-preview.png);
+    grid-row: 5/7;
+}
+
+#d5{
+    background-image: url(/image/brown_w-removebg-preview.png);
+    grid-row: 2/4;
+    background-size: 40%;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: ease 1s;
+}
+#d11{
+    background-image: url(/image/features2f.jpg);
+    grid-row: 5/8;
+    background-size: cover;
+    background-position: bottom;
+    transition: ease 1s;
+    border-radius: 20px;
+    margin: 0 20px;
+}
+#d12{
+    font-size: 1.2vw;
+    background-color: unset;
+    flex-flow: column;
+    justify-content: center;
+    text-align: center;    
+}
+
+
+.contact{
+    margin-top: 20vh;
+    padding-top: 15vh;
+    width: 96%;
+    height: auto;
+    text-align: center;
+}
+
+.contact h2{
+    font-family: 'Balsamiq Sans';
+    letter-spacing: 0.2vw;
+    color: rgb(133, 29, 3);
+    text-align: center;
+    font-size: 4vw;
+    padding-bottom: 2vw;
+    text-shadow: 1px 0px 2px rgb(82, 80, 80);
+}
+
+.contact label,h2{
+    text-shadow: 0px 3px 2px rgb(31, 30, 30);
+    color: white;
+    font-size: 1.5vw;
+    font-family: "Akaya Kanadaka",cursive;
+}
+.form_container{
+    margin-top: 2vw;
+    width: 99vw;
+    background-color: rgb(190, 99, 73);;
+}
+.contact-form{
+    padding: 5vw 1vw;
+    max-width: 80vw;
+    display: flex;
+    text-align: left;
+    margin: 0 auto;
+}
+
+.contact-form label{
+    display: block;
+    margin-bottom: 1vw;
+}
+
+.message{
+    display: flex;
+    text-align: left;
+    margin: 0 auto;
+    width: 60%;
+    flex-direction: column;
+    margin-left: 4vw;
+}
+
+.message textarea{
+    border: none;
+    border-radius: 5px;
+
+}
+
+.contact-details {
+    flex: 1;
+    margin-right: 5vw;
+}
+
+.contact-details input {
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    padding: 15px 20px;
+    margin-bottom: 2vw;
+}
+
+.message button {
+    color: #ffffff;
+    border: 0;
+    border-radius: 5px;
+    background: #4d1802;
+    width: 140px;
+    height: 40px;
+    margin-top: 40px;
+    margin-left: auto;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.message button:hover {
+    background: black;
+    color:white;
+    transition:0.2s;
+}
+
+footer {
+    height:auto;
+    background-color: #1a0800;
+}
+
+footer .container{
+    display: flex;
+    justify-content: space-evenly;
+    width: auto;
+    height: auto;
+}
+
+.social-media {
+    letter-spacing: 1.5vw;
+    font-size: 2.5vw;
+    width:20%;
+    margin-left: auto;
+    word-spacing: 10px;
+}
+
+.social-media a i{
+    transition: 0.2s;
+}
+
+.social-media a i:hover {
+    color: rgb(255, 255, 255);
+    transition: 0.2;
+}
+.copyright {
+    margin: 10px 50px ;
+    text-align: center;
+    align-self: center;
+    font-size: 1.2vw;
+    color: white;
+}
